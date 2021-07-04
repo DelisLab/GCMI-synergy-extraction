@@ -2,7 +2,7 @@
 
 
 Prerequisites:<br />
-GCMI repository (Matlab) set on path (https://github.com/robince/gcmi)
+GCMI repository (https://github.com/robince/gcmi)
 
 
 

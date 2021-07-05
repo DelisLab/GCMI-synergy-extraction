@@ -10,15 +10,30 @@ Generalized Louvain repository (https://github.com/GenLouvain/GenLouvain)
 The following scripts (Supporting functions folder) have been adapted directly from other github repositories:<br />
 'opnmf.m' and 'NNDSVD.M' (https://github.com/asotiras/brainparts)<br />
 'get_components.m' and 'threshold_absolute.m' (https://github.com/CarloNicolini/communityalg)<br />
-'number_connected_components.m' (https://github.com/CarloNicolini/communityalg)
+'number_connected_components.m' and 'threshold_by_giant_component.m' (https://github.com/CarloNicolini/communityalg)
 
 
 ## Implementation
--Set GCMI_synergies folder on Matlab path.<br />
+-Set GCMI_synergies, GCMI and genLouvain folders on Matlab path.<br />
 -Type 'main' into command line and hit enter.<br />
--Import data in the following format: Mat file containing a matrix of timepoints as rows and EMG channels as columns.<br />
+-Import data in the following format: A Mat file containing a matrix of timepoints as rows and EMG channels as columns.<br />
 -Fill in the relevant information and tick the desired boxes.<br />
 -Click the Start button.
+
+## Output
+Mat_thresholded: Matrix of GCMI values that have been thresholded using a modified percolation analysis.<br />
+Mat_unthresholded: Matrix of GCMI values that have not been thresholded. <br />
+Thresholds: A vector specifying the threshold value identified within each layer of the multiplex network. <br />
+Opt_rank: The optimal model rank identified using the generalised community detection protocol. <br />
+Q: The Q-statistic for maximal modularity for Opt_rank. <br />
+S: A matrix indicating the hard cluster assignment produced by the community detection protocol. <br />
+PNMF: A structure with the results of the PNMF dimensionality reduction using Opt_rank as the input parameter.
+
+
+
+## Optional Input
+Manual model rank selection: Instead of finding the optimal model rank, the input parameter for PNMF can be specified manually. To do so, firstly import the data then tick the checkbox and input the desired model rank in the enabled field.<br />
+Manual threshold selection: Instead of finding network layer specific threshold values, the threshold can be set manually. To do so, firstly import the data and then tick the checkbox and fill in the desired threshold value that will be used across all network layers
 
 
 ##  References

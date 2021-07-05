@@ -2,8 +2,15 @@
 
 
 Prerequisites:<br />
-GCMI repository (https://github.com/robince/gcmi)
+GCMI repository (https://github.com/robince/gcmi)<br />
+Generalized Louvain repository (https://github.com/GenLouvain/GenLouvain)
 
+
+
+The following scripts (Supporting functions folder) have been adapted directly from other github repositories:<br />
+'opnmf.m' and 'NNDSVD.M' (https://github.com/asotiras/brainparts)<br />
+'get_components.m' and 'threshold_absolute.m' (https://github.com/CarloNicolini/communityalg)<br />
+'number_connected_components.m' (https://github.com/CarloNicolini/communityalg)
 
 
 ## Implementation

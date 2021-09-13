@@ -9,14 +9,14 @@ Generalized Louvain repository (https://github.com/GenLouvain/GenLouvain)
 
 The following scripts (Supporting functions folder) have been adapted directly from other github repositories:<br />
 'opnmf.m' and 'NNDSVD.M' (https://github.com/asotiras/brainparts)<br />
-'get_components.m' and 'threshold_absolute.m' (https://github.com/brainlife/BCT)<br />
-'number_connected_components.m' and 'threshold_by_giant_component.m' (https://github.com/CarloNicolini/communityalg)
+'community_louvain.m','get_components.m' and 'threshold_absolute.m' (https://github.com/brainlife/BCT)<br />
+'number_connected_components.m' and 'threshold_by_giant_component.m' (https://github.com/CarloNicolini/communityalg)<br/>
 
 
 ## Implementation
 -Set GCMI_synergies, GCMI and genLouvain folders on Matlab path.<br />
 -Type 'main' into command line and hit enter.<br />
--Import data in the following format: A Mat file containing a matrix of timepoints as rows and EMG channels as columns.<br />
+-Import data in the following format: A Mat file containing a matrix of timepoints x trials as rows and EMG channels as columns.<br />
 -Fill in the relevant information and tick the desired boxes.<br />
 -Click the Start button.
 

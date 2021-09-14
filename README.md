@@ -2,7 +2,7 @@
 
 
 Prerequisites:<br />
-Matlab version R2019 or older..
+Matlab version R2019 or older..<br/>
 GCMI repository (https://github.com/robince/gcmi)<br />
 Generalized Louvain repository (https://github.com/GenLouvain/GenLouvain)
 

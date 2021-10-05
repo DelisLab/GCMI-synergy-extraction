@@ -2,7 +2,6 @@
 
 
 Prerequisites:<br />
-Matlab version R2019 or older..<br/>
 GCMI repository (https://github.com/robince/gcmi)<br />
 Generalized Louvain repository (https://github.com/GenLouvain/GenLouvain)
 
@@ -16,6 +15,7 @@ The following scripts (Supporting functions folder) have been adapted directly f
 
 ## Implementation
 -Set GCMI_synergies, GCMI and genLouvain folders on Matlab path.<br />
+-If not using Matlab 2019 version, run the 'compile_mex.m' script found in the Gen_Louvain repository.<br/>
 -Type 'main' into command line and hit enter.<br />
 -Import data in the following format: A Mat file containing a matrix of timepoints x trials as rows and EMG channels as columns.<br />
 -Fill in the relevant information and tick the desired boxes.<br />
